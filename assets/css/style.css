@@ -59,6 +59,7 @@
       color: #4aaaa5;
   }
 
+
   /* ---- layout */
   .navbar-container {
     background-color: #fff;
@@ -78,14 +79,37 @@
     background-color: #4aaaa5;
   }
 
+  .navbar-toggler:focus {
+    outline: none;
+    opacity: .5;
+  }
+
+  .navbar-toggler-icon:hover,
+  .navbar-toggler-icon:focus {
+    opacity: .5;
+    transition: .4s all;
+  }
+
   .nav-item {
     color: #777;
   }
+
+  /* .navbar-nav {
+    height: 20px;
+  } */
 
   .navbar-nav li:not(:last-of-type) {
     padding-right: 10px;
     margin-right: 10px;
     border-right: thin solid #ddd;
+}
+
+/* .navbar-nav li a {
+  padding: 0;
+} */
+
+.navbar-light .navbar-nav .active>.nav-link {
+  color: #4aaaa5;
 }
 
   .main {
@@ -122,12 +146,34 @@
     font-size: .75em;
   }
 
+
   /* ----- Sticky Footer */
   .main {
     display: flex;
     flex-direction: column;
     height: 100vh;
   }
+
+
+  /* ----- About Page */
+  #about .card-p {
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 440px) {
+    #about .card-p:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  @media screen and (min-width: 440px) {
+    #about img {
+      max-width: 200px;
+      float: left;
+      margin-right: 20px;
+    }
+  }
+
 
   /* ----- Portfolio Page */
   #portfolio .card-img {
