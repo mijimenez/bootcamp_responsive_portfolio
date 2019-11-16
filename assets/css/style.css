@@ -148,16 +148,22 @@
 
 
   /* ----- Sticky Footer */
-  .main {
+  body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+  }
+
+  .main {
+    flex: 1 0 auto;
+    min-height: auto;
   }
 
 
   /* ----- About Page */
   #about .card-p {
     margin-top: 20px;
+    line-height: 2em;
   }
 
   @media screen and (min-width: 440px) {
