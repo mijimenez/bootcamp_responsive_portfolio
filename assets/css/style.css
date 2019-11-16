@@ -28,7 +28,7 @@
   }
 
   @media screen and (min-width: 576px) {
-    h1 {
+    h2 {
       font-size: 1.875rem;
     }
   }
@@ -91,6 +91,11 @@
     background-color: #4aaaa5;
   }
 
+  .navbar-brand:hover,
+  .navbar-brand:focus {
+    opacity: .8;
+  }
+
   .navbar-toggler:focus {
     outline: none;
     opacity: .5;
@@ -137,26 +142,21 @@
   }
 
   .main .row .col-sm-12 {
-    padding: 0;
-    margin: 40px 0;
+    margin-top: 90px;
   }
 
-  .main-card {
-    padding: 20px;
+  @media screen and (min-width: 576px) {
+    .main .row .col-sm-12 {
+      margin-top: 110px;
+    }
   }
 
   .main-title {
-    margin-bottom: 20px;
-    padding-bottom: 20px;
     border-bottom: thin solid #ddd;
-    width: 100%;
   }
 
   .footer {
     background-color: #666;
-    padding: 20px 0;
-    margin: 0;
-    max-width: 100%;
     border-top: 8px solid #4aaaa5;
   }
 
@@ -185,13 +185,13 @@
     line-height: 2em;
   }
 
-  @media screen and (min-width: 440px) {
+  @media screen and (min-width: 576px) {
     #about .card-p:first-of-type {
       margin-top: 0;
     }
   }
 
-  @media screen and (min-width: 440px) {
+  @media screen and (min-width: 576px) {
     #about img {
       max-width: 200px;
       float: left;
@@ -201,18 +201,9 @@
 
 
   /* ----- Portfolio Page */
-  #portfolio .card-img {
-    position: relative;
-  }
-
   #portfolio .portfolio-label {
-    position: absolute;
     bottom: 12px;
     left: 0;
-    text-align: center;
-    color: #fff;
-    padding: 20px 10px;
-    width: 100%;
     background-color: #4aaaa5; 
 }
 
@@ -224,12 +215,17 @@
   transition: .4s all;
 }
 
-  /* ----- Contact Page */
-  #contact form {
-    width: 100%;
-  }
 
-  button[type="submit"] {
+  /* ----- Contact Page */
+input[type="text"]:hover,
+textarea[type="text"]:hover,
+input[type="text"]:focus,
+textarea[type="text"]:focus {
+  border: thin solid #ddd;
+  border-left: 8px solid #4aaaa5;
+}
+
+button[type="submit"] {
     background-color: #4aaaa5;
     border-style: none;
     color: #fff;
