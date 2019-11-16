@@ -24,12 +24,24 @@
 
   h2 {
       color: #4aaaa5;
+      font-size: 1.5rem;
+  }
+
+  @media screen and (min-width: 576px) {
+    h1 {
       font-size: 1.875rem;
+    }
   }
 
   h3 {
       font-weight: normal;
+      font-size: .9rem;
+  }
+
+  @media screen and (min-width: 767px) {
+    h3 {
       font-size: 1.17rem;
+    }
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -94,19 +106,26 @@
     color: #777;
   }
 
-  /* .navbar-nav {
-    height: 20px;
-  } */
-
   .navbar-nav li:not(:last-of-type) {
     padding-right: 10px;
     margin-right: 10px;
     border-right: thin solid #ddd;
 }
 
-/* .navbar-nav li a {
-  padding: 0;
-} */
+@media screen and (max-width: 767px) {
+  .navbar-nav li:not(:last-of-type) {
+    padding-right: 0;
+    margin-right: 0;
+    border:none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #navbarNav {
+    text-align: right;
+    margin-bottom: .5em;
+  }
+}
 
 .navbar-light .navbar-nav .active>.nav-link {
   color: #4aaaa5;
