@@ -13,7 +13,7 @@
  
   h1 {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   @media screen and (min-width: 576px) {
@@ -123,11 +123,11 @@
   }
 
   /* ----- Sticky Footer */
-  /* .main {
+  .main {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 66px);
-  } */
+    height: 100vh;
+  }
 
   /* ----- Portfolio Page */
   #portfolio .card-img {
@@ -152,3 +152,24 @@
   box-shadow: 0px 3px 5px -2px rgba(0,0,0,0.75);
   transition: .4s all;
 }
+
+  /* ----- Contact Page */
+  #contact form {
+    width: 100%;
+  }
+
+  button[type="submit"] {
+    background-color: #4aaaa5;
+    border-style: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    transition: .4s background-color;
+}
+
+  button[type="submit"]:hover,
+  button[type="submit"]:focus {
+      background-color: #437471;
+      color: #fff;
+      cursor: pointer;
+  }
